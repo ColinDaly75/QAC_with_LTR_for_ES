@@ -1,5 +1,4 @@
-# Learning to Rank for Query Auto-Complete with Language Modelling
-for Enterprise Search.
+# Learning to Rank for Query Auto-Complete with Language Modelling for Enterprise Search.
 -----------------------------------------------------------------------------------
 
 Contact: dalyc24@tcd.ie
