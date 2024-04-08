@@ -1,7 +1,8 @@
 # Learning to Rank for Query Auto-Complete with Language Modelling for Enterprise Search.
 -----------------------------------------------------------------------------------
 
-Contact: dalyc24@tcd.ie
+Contact: email redacted
+<!-- Contact: dalyc24@tcd.ie  -->
 
 -----------------------------------------------------------------------------------
 ## Summary
@@ -85,6 +86,6 @@ for Enterprise Search.},
 
 
 # Acknowledgements
-REDACTED
+redacted
 <!-- This research was conducted with the financial support of Science Foundation Ireland under Grant Agreement No. 13/RC/2106 P2 at the ADAPT SFI Research Centre at Trinity College Dublin. ADAPT, the SFI Research Centre for AI-Driven Digital Content Technology, is funded by Science Foundation Ireland through the SFI Research Centres Programme.
 -->
