@@ -15,6 +15,8 @@ This project analyses the the use of Learning to Rank for Query Auto-Complete su
 
 
 ### Search Demand Curve
+The search demand curve below shows the outsize impact that a small number of popular queries has on the overall volume of search activity. In our enterprise search query logs, we see that the same 65 queries account for 18.5% of all search volume. 
+
 
 <img src="https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/60b77712-58df-4141-80fe-6b296886156c" width="700" height="500">
 
