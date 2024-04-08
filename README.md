@@ -34,8 +34,9 @@ We use the CTR values in place of human relevance judgements are recreate our le
 - clickthrough rate.
 
 # Dataset
-We generate and publish a small manually annotated LTR dataset (ENTRP-SRCH.txt) that includes both kinds of feedback as well as a number of features used for learning to rank.  The LTR dataset is formatted as follows: -
-![LETOR_format_diagram-with-clickthroughrate](https://user-images.githubusercontent.com/51714656/184387570-87e33de2-a985-4d8f-8a71-4cd7f43bb87a.png)
+We generate a small LTR QAC dataset. The LTR dataset is constructed and formatted as follows: -
+![fig-qac-dataset-format](https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/d32fd4eb-f7a5-4198-a371-bcf05c88a49a)
+
 
 # How to Run
 The attached dataset and code were used to perform correlation and ranking performance tests.  To reproduce, simply download the code (python ipynb files) and LTR dataset (txt file).  It was compliled using python 3 and requires the installation (pip3) of datapane,jinja2 and scipy packages.
