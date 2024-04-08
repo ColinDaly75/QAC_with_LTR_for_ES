@@ -13,6 +13,13 @@ predictions to create a QAC ranking model for a ‘live’ Enterprise Search ser
 ## Analysis & Experiments
 This project analyses the the use of Learning to Rank for Query Auto-Complete suggestions on a ’real world’ Enterprise Search (ES) service of a large organisation.
 
+
+### Search Demand Curve
+
+![Fig-Search-Demand-Curve-ES](https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/60b77712-58df-4141-80fe-6b296886156c)
+
+
+
 ###  LTR Weighting Calculation
 
 
