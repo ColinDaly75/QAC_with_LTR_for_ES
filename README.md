@@ -37,6 +37,7 @@ We use the CTR values in place of human relevance judgements are recreate our le
 We generate a small LTR QAC dataset. Most Popular Completions(MPC) is widely used as a QAC baseline and can be regarded as an approximate maximum likelihood estimator ~\cite{li-google-2017,yadav2021}. MPC is limited by its dependence on historical data and cannot make predictions about the popularity of future query candidates.  In our study, we use MPC as a surrogate for judgements of query-candidate tuples.   Enumerated judgements \{1-5\} are allocated to the completions, representing \{utterly irrelevant, irrelevant, moderately relevant, relevant, highly relevant\}.   These tuples will form the basis of our LTR QAC dataset, whose ranking model will also predict candidates for `unseen' queries.The LTR dataset is constructed and formatted as follows: -
 
 <img src="https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/d32fd4eb-f7a5-4198-a371-bcf05c88a49a" width="500" height="400">
+
 Figure: The LTR formatted dataset including a sample of the candidates for the ``tim" query prefix.  Each candidate has an associated judgement (generated using MPC), a candidate identifier and a series of feature vectors.
 
 # How to Run
