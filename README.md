@@ -62,8 +62,8 @@ The two scripts can be run independently, but the logical order is
 
 
 # Citation
+<!--
 ```
-FOR EXAMPLE:
 @inproceedings{dalyc2024a,
 	title={Learning to Rank for Query Auto-Complete with Language Modelling
 for Enterprise Search.},
@@ -73,6 +73,7 @@ for Enterprise Search.},
 	organization={IEEE}
 }
 ```
+-->
 
 
 # Dependencies
