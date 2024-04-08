@@ -14,20 +14,11 @@ predictions to create a QAC ranking model for a ‘live’ Enterprise Search ser
 This project analyses the the use of Learning to Rank for Query Auto-Complete suggestions on a ’real world’ Enterprise Search (ES) service of a large organisation.
 
 ###  LTR Weighting Calculation
-We investigate the correlation between a) human relevance judgements and b) clickthrough rate (CTR) in a learning to rank dataset.
 
-The click-through rate (CTR) is generally defined as the percentage of the number of clicks to the number of impressions.  For the purposes of this study, we calculate the CTR for document, d, and query, q, as follows: - 
 
-$$ CTR_{(q,d)} = {\frac{ clicks_{(q,d)}}{impressions_{(q,d)}}} $$
-
-where impressions is the sum of clicks for all documents returned for q.  A high CTR indicates that users find the document within the listings as helpful and relevant for the given query.  For example, a document with a CTR value of 0.26 means that 26% of the end-users selected that document for the given query.
-
-The metric used to calculate the correlation is the Spearman correlation coefficient. 
 
 ### MRR Calculations
 The Reciprocal Rank (RR) of a query response is the multiplicative inverse of the rank of the first correct answer: 1 for first place, 1⁄3 for third place, or zero if the submitted query is not present in the ranked list~\cite{singh2023}. The mean reciprocal rank is the average of the RR results for a sample of queries Q:
-
-$$ MRR = {\frac {1}{|Q|} \sum __{{i=1}}^{{|Q|}}{\frac  {1}{{{rank}}_{i}}}} $$
 
 $$ MRR = \frac  {1}{|Q|} \sum_{{i=1}}^{{|Q|}}{\frac  {1}{{{rank}}_{i}}} $$
 
