@@ -4,7 +4,7 @@
 Contact: dalyc24@tcd.ie
 
 -----------------------------------------------------------------------------------
-## Abstract
+## Summary
 Query auto-completion (QAC) is of particular importance to the field of Enterprise Search, where query suggestions can prompt searchers to use the appropriate organisational jargon/phraseology and avoid submitting
 queries that produce no results. The order in which QAC candidates are presented to users (for a given prefix) can be influenced by signals, such as how often the prefix appears in the corpus, most popular completions, most frequently queried, anchor text and other fields of a document, or what queries are currently trending in the organisation. We measure the individual contribution of each of these heuristic ranking signals, which
 can be combined and supplemented with predictions generated using a generic large language model (LLM) ‘tuned’ with an Enterprise Search corpus. We use Learning To Rank (LTR) to combine these signals and
@@ -24,6 +24,8 @@ Figure: Search Demand Curve for Enterprise Search, showing the so-called 'Fat He
 
 
 ###  LTR Weighting Calculation
+
+![Fig-qac-weighted-sources](https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/9fed8c16-992d-4219-b0d3-2e519e93735c)
 
 
 
