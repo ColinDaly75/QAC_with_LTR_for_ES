@@ -42,10 +42,14 @@ where $rank_{i}$ refers to the rank position of the first relevant document for 
 The MRR calculations are shown in the [mrr-enterprise-search.ipynb](https://github.com/ColinDaly75/QAC_LTR_for_ES/blob/main/mrr-enterprise-search.ipynb) script.
 
 
-### Experiment :  Offline evaluation of QAC ranking performance using MRR
-We use the CTR values in place of human relevance judgements are recreate our learning to rank model.   This involves subsitiuting the CTR values into the first column of the LTR dataset.   The nDCG values are calculated using 
-- human relevance judgements and 
-- clickthrough rate.
+
+
+
+### Experiment :  Offline evaluation of QAC ranking performance using MRR with Ablation Analysis
+Ablation/leave-one-out analysis showing the contribution of individual features to the MRR performance across the QAC ranking models.  In the Figure below, the red line represents the cumulative total MRR score as each feature is added.
+
+<img src="https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/dcdfeb73-3548-4e5a-93b2-a21cd785b049" width="500" height="400">
+
 
 # Dataset
 We generate a small LTR QAC dataset. Most Popular Completions(MPC) is widely used as a QAC baseline and can be regarded as an approximate maximum likelihood estimator ~\cite{li-google-2017,yadav2021}. MPC is limited by its dependence on historical data and cannot make predictions about the popularity of future query candidates.  In our study, we use MPC as a surrogate for judgements of query-candidate tuples.   Enumerated judgements \{1-5\} are allocated to the completions, representing \{utterly irrelevant, irrelevant, moderately relevant, relevant, highly relevant\}.   These tuples will form the basis of our LTR QAC dataset, whose ranking model will also predict candidates for `unseen' queries.The LTR dataset is constructed and formatted as follows: -
