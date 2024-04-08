@@ -4,6 +4,11 @@
 Contact: dalyc24@tcd.ie
 
 -----------------------------------------------------------------------------------
+## Abstract
+Query auto-completion (QAC) is of particular importance to the field of Enterprise Search, where query suggestions can prompt searchers to use the appropriate organisational jargon/phraseology and avoid submitting
+queries that produce no results. The order in which QAC candidates are presented to users (for a given prefix) can be influenced by signals, such as how often the prefix appears in the corpus, most popular completions, most frequently queried, anchor text and other fields of a document, or what queries are currently trending in the organisation. We measure the individual contribution of each of these heuristic ranking signals, which
+can be combined and supplemented with predictions generated using a generic large language model (LLM) ‘tuned’ with an Enterprise Search corpus. We use Learning To Rank (LTR) to combine these signals and
+predictions to create a QAC ranking model for a ‘live’ Enterprise Search service. In an online A/B test, our preliminary results show that the addition of the jargon/phraseology detection LLM feature to the heuristic LTR model results in an increase of 4% to the Mean Reciprocal Rank score.
 
 ## Analysis & Experiments
 This project analyses the the use of Learning to Rank for Query Auto-Complete suggestions on a ’real world’ Enterprise Search (ES) service of a large organisation.
@@ -18,6 +23,11 @@ $$ CTR_{(q,d)} = {\frac{ clicks_{(q,d)}}{impressions_{(q,d)}}} $$
 where impressions is the sum of clicks for all documents returned for q.  A high CTR indicates that users find the document within the listings as helpful and relevant for the given query.  For example, a document with a CTR value of 0.26 means that 26% of the end-users selected that document for the given query.
 
 The metric used to calculate the correlation is the Spearman correlation coefficient. 
+
+### MRR Calculations
+The Reciprocal Rank (RR) of a query response is the multiplicative inverse of the rank of the first correct answer: 1 for first place, 1⁄3 for third place, or zero if the submitted query is not present in the ranked list~\cite{singh2023}. The mean reciprocal rank is the average of the RR results for a sample of queries Q:
+\[ MRR = \frac  {1}{|Q|} \sum _{{i=1}}^{{|Q|}}{\frac  {1}{{{rank}}_{i}}} \]
+where $rank_{i}$ refers to the rank position of the first relevant document for the $i^{th}$ query. MRR only considers the rank of the first relevant candidate (if there are further relevant candidates, they are ignored).
 
 ### Experiment :  Offline evaluation of QAC ranking performance using MRR
 We use the CTR values in place of human relevance judgements are recreate our learning to rank model.   This involves subsitiuting the CTR values into the first column of the LTR dataset.   The nDCG values are calculated using 
