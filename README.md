@@ -18,6 +18,7 @@ This project analyses the the use of Learning to Rank for Query Auto-Complete su
 
 ![Fig-Search-Demand-Curve-ES](https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/60b77712-58df-4141-80fe-6b296886156c)
 
+Figure: Search Demand Curve for Enterprise Search, showing the so-called 'Fat Head', 'Chunky Middle' and 'Long Tail' zones.  For our ES dataset, the most popular 65 queries represent 18.5\% of all search volume.
 
 
 ###  LTR Weighting Calculation
