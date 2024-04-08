@@ -27,7 +27,10 @@ The metric used to calculate the correlation is the Spearman correlation coeffic
 ### MRR Calculations
 The Reciprocal Rank (RR) of a query response is the multiplicative inverse of the rank of the first correct answer: 1 for first place, 1⁄3 for third place, or zero if the submitted query is not present in the ranked list~\cite{singh2023}. The mean reciprocal rank is the average of the RR results for a sample of queries Q:
 
-$$ MRR = {\frac{1}{|Q|} \sum __{{i=1}}^{{|Q|}}{\frac  {1}{{{rank}}_{i}}}} $$
+$$ MRR = {\frac {1}{|Q|} \sum __{{i=1}}^{{|Q|}}{\frac  {1}{{{rank}}_{i}}}} $$
+
+\[ MRR = \frac  {1}{|Q|} \sum_{{i=1}}^{{|Q|}}{\frac  {1}{{{rank}}_{i}}} \]
+
 
 where $rank_{i}$ refers to the rank position of the first relevant document for the $i^{th}$ query. MRR only considers the rank of the first relevant candidate (if there are further relevant candidates, they are ignored).
 
