@@ -29,7 +29,7 @@ The Reciprocal Rank (RR) of a query response is the multiplicative inverse of th
 
 $$ MRR = {\frac {1}{|Q|} \sum __{{i=1}}^{{|Q|}}{\frac  {1}{{{rank}}_{i}}}} $$
 
-\[ MRR = \frac  {1}{|Q|} \sum_{{i=1}}^{{|Q|}}{\frac  {1}{{{rank}}_{i}}} \]
+$$ MRR = \frac  {1}{|Q|} \sum_{{i=1}}^{{|Q|}}{\frac  {1}{{{rank}}_{i}}} $$
 
 
 where $rank_{i}$ refers to the rank position of the first relevant document for the $i^{th}$ query. MRR only considers the rank of the first relevant candidate (if there are further relevant candidates, they are ignored).
