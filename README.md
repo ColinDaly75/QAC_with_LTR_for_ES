@@ -48,7 +48,7 @@ The MRR calculations are shown in the [mrr-enterprise-search.ipynb](https://gith
 ### Experiment :  Offline evaluation of QAC ranking performance using MRR with Ablation Analysis
 Ablation/leave-one-out analysis showing the contribution of individual features to the MRR performance across the QAC ranking models.  In the Figure below, the red line represents the cumulative total MRR score as each feature is added.
 
-<img src="https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/dcdfeb73-3548-4e5a-93b2-a21cd785b049" width="500" height="400">
+<img src="https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/dcdfeb73-3548-4e5a-93b2-a21cd785b049" width="600" height="400">
 
 
 # Dataset
