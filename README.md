@@ -24,8 +24,9 @@ Figure: Search Demand Curve for Enterprise Search, showing the so-called 'Fat He
 
 
 ###  LTR Weighting Calculation
+In the Figure below, the typed "aca" prefix presents a list of completion choices via a ranked list of query candidates. Candidates are sourced from various features, each of which is `weighted' using LTR.
 
-![Fig-qac-weighted-sources](https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/9fed8c16-992d-4219-b0d3-2e519e93735c)
+<img src="https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/9fed8c16-992d-4219-b0d3-2e519e93735c" width="700" height="500">
 
 
 
