@@ -48,13 +48,15 @@ $$ MRR = \frac  {1}{|Q|} \sum_{{i=1}}^{{|Q|}}{\frac  {1}{{{rank}}_{i}}} $$
 
 where $rank_{i}$ refers to the rank position of the first relevant document for the $i^{th}$ query. MRR only considers the rank of the first relevant candidate (if there are further relevant candidates, they are ignored).
 
+The MRR calculations are genated by this code [mrr-enterprise-search.ipynb](https://github.com/ColinDaly75/QAC_LTR_for_ES/blob/main/mrr-enterprise-search.ipynb).
+
 
 ### Experiment :  Offline evaluation of QAC ranking performance using MRR with Ablation Analysis
 Ablation/leave-one-out analysis showing the contribution of individual features to the MRR performance across the QAC ranking models.  In the Figure below, the red line represents the cumulative total MRR score as each feature is added.
 
 <img src="https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/dcdfeb73-3548-4e5a-93b2-a21cd785b049" width="600" height="400">
 
-The MRR calculations and plot above are genated by this code [mrr-enterprise-search.ipynb](https://github.com/ColinDaly75/QAC_LTR_for_ES/blob/main/mrr-enterprise-search.ipynb).
+The ablation plot above is genated by this code [mrr-enterprise-search.ipynb](https://github.com/ColinDaly75/QAC_LTR_for_ES/blob/main/mrr-enterprise-search.ipynb).
 
 
 # Dataset
