@@ -5,11 +5,9 @@ Contact: email redacted
 <!-- Contact: dalyc24@tcd.ie  -->
 
 -----------------------------------------------------------------------------------
-## Summary
-Query auto-completion (QAC) is of particular importance to the field of Enterprise Search, where query suggestions can prompt searchers to use the appropriate organisational jargon/phraseology and avoid submitting
-queries that produce no results. The order in which QAC candidates are presented to users (for a given prefix) can be influenced by signals, such as how often the prefix appears in the corpus, most popular completions, most frequently queried, anchor text and other fields of a document, or what queries are currently trending in the organisation. We measure the individual contribution of each of these heuristic ranking signals, which
-can be combined and supplemented with predictions generated using a generic large language model (LLM) ‘tuned’ with an Enterprise Search corpus. We use Learning To Rank (LTR) to combine these signals and
-predictions to create a QAC ranking model for a ‘live’ Enterprise Search service. In an online A/B test, our preliminary results show that the addition of the jargon/phraseology detection LLM feature to the heuristic LTR model results in an increase of 4% to the Mean Reciprocal Rank score.
+## Intro
+The code outlined in this repository pertains to the field Query auto-completion (QAC) for Enterprise Search (ES).   This code accompanies my paper entitled "Learning to Rank for Query Auto-Complete with Language Modelling for Enterprise Search."
+
 
 ## Analysis & Experiments
 This project analyses the the use of Learning to Rank for Query Auto-Complete suggestions on a ’real world’ Enterprise Search (ES) service of a large organisation.
