@@ -66,10 +66,11 @@ The ablation plot above is genated by this code [mrr-enterprise-search.ipynb](ht
 
 
 # How to Run
-The attached dataset and code were used to perform correlation and ranking performance tests.  To reproduce, simply download the code (python ipynb files) and LTR dataset (txt file).  It was compliled using python 3 and requires the installation (pip3) of datapane,jinja2 and scipy packages.
-The two scripts can be run independently, but the logical order is 
-1. ES-LTR-explicit-implicit-correlation.ipynb
-2. ES-LTR-ranking-performance.ipynb  (simply change the judgements variable to 'HUMAN' or 'CTR')
+To reproduce, simply download the code (python ipynb files) and LTR dataset (txt file).  The code was compliled using python 3 (see addional package requirements below).
+The scripts can be run independently, but the logical order is 
+1. search-demand-curve-enterprise-search.ipynb   (dataset analysis and prepration)
+2. es-llm-jargon.ipynb                           (detects 'Divergent Terms' used by organisations)
+3. mrr-enterprise-search.ipynb			 (evaluation ranking model)
 
 
 
