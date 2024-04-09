@@ -6,7 +6,7 @@ Contact: email redacted
 
 -----------------------------------------------------------------------------------
 ## Intro
-The code outlined in this repository pertains to the field Query auto-completion (QAC) for Enterprise Search (ES).   This code accompanies my paper entitled "Learning to Rank for Query Auto-Complete with Language Modelling for Enterprise Search."
+The code outlined in this repository pertains to the field of Query Auto-Completion (QAC) in the domain of Enterprise Search (ES).   This code accompanies my paper entitled "**Learning to Rank for Query Auto-Complete with Language Modelling for Enterprise Search.**"
 
 
 ## Analysis & Experiments
