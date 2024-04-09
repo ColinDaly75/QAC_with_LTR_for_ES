@@ -29,7 +29,7 @@ LLMs, such as OpenAI's GPT (Generative Pre-trained Transformer) models, are trai
 
 Here is the code for QACES detection: -
 
-[es-llm-jargon.ipynb]([url](https://github.com/ColinDaly75/QAC_LTR_for_ES/blob/main/es-llm-jargon.ipynb))
+[es-llm-jargon.ipynb](https://github.com/ColinDaly75/QAC_LTR_for_ES/blob/main/es-llm-jargon.ipynb))
 
 
 
