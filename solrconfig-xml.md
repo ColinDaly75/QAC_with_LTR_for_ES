@@ -1,6 +1,8 @@
 
 
-Here is how the suggester was implemented using Apache Solr: -
+Here is how the suggester was implemented using Apache Solr.
+
+Note the 'weightExpression' parameter.  These weights were calculated offline using the RankEval framework.
 
 ```
    <searchComponent name="suggest" class="solr.SuggestComponent">
