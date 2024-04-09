@@ -24,6 +24,15 @@ The search demand curve below shows the outsize impact that a small number of po
 Figure: Search Demand Curve for Enterprise Search, showing the so-called 'Fat Head', 'Chunky Middle' and 'Long Tail' zones.  For our ES dataset, the most popular 65 queries represent 18.5\% of all search volume.
 
 
+### QACES
+LLMs, such as OpenAI's GPT (Generative Pre-trained Transformer) models, are trained on large datasets containing vast amounts of text from diverse sources.  Word embeddings (e.g., Word2Vec, GloVe) can capture semantic relationships between words in text data.  While LLMs and embeddings are regularly used in e-commerce~\cite{singh2023} and commercial search engines~\cite{li-google-2017}, their use for ES has not been sufficiently explored.  In this paper, we introduce a ranking feature explicitly designed for ES.  We call this `QACES' (Query Auto-Complete for Enterprise Search).   This feature is centred on the unusualness of words, such as those used in a specific organisation's jargon/phraseology.
+
+Here is the code for QACES detection: -
+[es-llm-jargon.ipynb]([url](https://github.com/ColinDaly75/QAC_LTR_for_ES/blob/main/es-llm-jargon.ipynb))
+
+
+
+
 ###  LTR Weighting Calculation
 In the Figure below, the typed "aca" prefix presents a list of completion choices via a ranked list of query candidates. Candidates are sourced from various features, each of which is `weighted' using LTR.
 
