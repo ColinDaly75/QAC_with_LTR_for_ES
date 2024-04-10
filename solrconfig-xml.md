@@ -27,5 +27,38 @@ Note the 'weightExpression' parameter.  These weights were calculated offline us
   </searchComponent>
   ```
 
+And this is how the suggestion terms and weights are defined within the Solr (managed) schema: -
+
+```
+# grep -i sugg /opt/solr/server/solr/<CORPUS_NAME>/conf/managed-schema
+  <field name="suggestion_term_1" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_2" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_3" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_4" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_5" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_6" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_7" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_all" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_weight_1" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_2" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_3" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_4" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_5" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_6" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_7" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <copyField source="suggestion_term_1" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_2" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_3" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_4" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_5" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_6" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_7" dest="suggestion_term_all"/>
+#
+#
+```
+
+
+
+
 
 
