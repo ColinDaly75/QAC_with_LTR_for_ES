@@ -95,7 +95,7 @@ for Enterprise Search.},
 - [Python](https://www.python.org) >= 3.5
 - [numpy](https://numpy.org)
 - [sklearn](https://scikit-learn.org)
-- [openai]{https://pypi.org/project/openai/) = 1.16.1
+- [openai](https://pypi.org/project/openai/) = 1.16.1
 
   
 
