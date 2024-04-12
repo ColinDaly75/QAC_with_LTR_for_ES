@@ -90,9 +90,8 @@ for Enterprise Search.},
 
 
 # Dependencies
-- python = 3.8
+- [Python](https://www.python.org) >= 3.8
 - [Tensorflow](https://www.tensorflow.org) >= 1.4
-- [Python](https://www.python.org) >= 3.5
 - [numpy](https://numpy.org)
 - [sklearn](https://scikit-learn.org)
 - [openai](https://pypi.org/project/openai/) = 1.16.1
