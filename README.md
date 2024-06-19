@@ -17,7 +17,7 @@ We generate a small LTR QAC dataset. Most Popular Completions(MPC) is widely use
 
 <img src="https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/96cc5642-c9d1-47a6-9ddd-1f30bb6e46e3" width="500" height="400">
 
-Figure: The LTR formatted dataset including a sample of the candidates for the ``tim" query prefix.  Each candidate has an associated judgement (generated using MPC), a candidate identifier and a series of feature vectors.
+Figure: The LTR formatted dataset including a sample of the candidates for the ``open" query prefix.  Each candidate has an associated judgement (generated using MPC), a candidate identifier and a series of feature vectors.
 
 
 ### Search Demand Curve
@@ -59,7 +59,8 @@ The MRR calculations are genated by this code [mrr-enterprise-search.ipynb](http
 ### Experiment :  Offline evaluation of QAC ranking performance using MRR with Ablation Analysis
 Ablation/leave-one-out analysis showing the contribution of individual features to the MRR performance across the QAC ranking models.  In the Figure below, the red line represents the cumulative total MRR score as each feature is added.
 
-<img src="https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/dcdfeb73-3548-4e5a-93b2-a21cd785b049" width="600" height="400">
+<img src="https://github.com/ColinDaly75/QAC_LTR_for_ES/assets/51714656/cbb45f81-27b2-41a9-b3b7-6f0b380cfe8c" width="600" height="400">
+
 
 The ablation plot above is genated by this code [mrr-enterprise-search.ipynb](https://github.com/ColinDaly75/QAC_LTR_for_ES/blob/main/mrr-enterprise-search.ipynb).
 
