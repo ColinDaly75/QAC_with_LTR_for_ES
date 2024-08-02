@@ -21,7 +21,7 @@ aspects of QAC for ES: -
 ## Limitations
 The QAC tracker tool has two important limitations. 
 * Firstly, if the ranking model contains more features than the number of candidates presented via the drop-down (usually ten or seven), those features with a lower LTR weighting will not be visible. This is easily overcome by typing the full prefix length (e.g., qactracker17).
-* Secondly, the presented order of the tracking strings merely conveys the relative ranking order; it does not give any absolute information regarding the LTR weighting.
+* Secondly, the presented order of the tracking strings merely conveys the _relative_ ranking order; it does not give any _absolute_ information regarding the LTR weighting.
 
 
 ## Suitability for Enterprise Search
