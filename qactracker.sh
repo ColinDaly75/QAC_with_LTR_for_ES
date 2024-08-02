@@ -5,7 +5,7 @@
 
 QAC_STRING=qactracker  #make sure this is not used in the corpus as regular content!
 MAX_NO_OF_FEATURES=9
-CORE=TCD_Sugg
+CORE=REDACTED
 SOLR_PORT=8983
 DEBUG=false
 
