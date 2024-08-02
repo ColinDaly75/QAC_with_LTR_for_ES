@@ -17,14 +17,17 @@ aspects of QAC for ES: -
 * Ranking: the order in which the candidates are ranked is a reflection of the weightings that are assigned via LTR. In Figure 4.8, we see that feature number 6 (identified by qactracker6) has a relatively higher LTR weighting than, say, feature number 3.
 
 
-### Limitations
+## Limitations
 The QAC tracker tool has two important limitations. 
 * Firstly, if the ranking model contains more features than the number of candidates presented via the drop-down (usually ten or seven), those features with a lower LTR weighting will not be visible. This is easily overcome by typing the full prefix length (e.g., qactracker17).
 * Secondly, the presented order of the tracking strings merely conveys the relative ranking order; it does not give any absolute information regarding the LTR weighting.
 
 
+## Suitability for Enterprise Search
 
-# How to Run
+## Advanced verification
+
+## How to Run
 Download the `qactracker.sh` script to the Apache Solr server.
 ```
 # ./qactracker.sh
@@ -44,10 +47,10 @@ qactracker1 qactracker2 qactracker3 qactracker4 qactracker5 qactracker6 qactrack
 #
 ```
 
-# Dependencies
+## Dependencies
 For the above to work, there should be a separate field for each QAC ranking feature.  The fields are designed in the Solr schema as follows: -
  ```
-#grep suggestion /opt/solr/server/solr/REDACTED/conf/managed-schema
+# grep suggestion /opt/solr/server/solr/REDACTED/conf/managed-schema
   <field name="suggestion_term_1" type="text_general" indexed="true" stored="true"/>
   <field name="suggestion_term_2" type="text_general" indexed="true" stored="true"/>
   <field name="suggestion_term_3" type="text_general" indexed="true" stored="true"/>
@@ -79,6 +82,6 @@ For the above to work, there should be a separate field for each QAC ranking fea
 
 
 
-# Acknowledgements
+## Acknowledgements
 This research was conducted with the financial support of Science Foundation Ireland under Grant Agreement No. 13/RC/2106 P2 at the ADAPT SFI Research Centre at Trinity College Dublin. ADAPT, the SFI Research Centre for AI-Driven Digital Content Technology, is funded by Science Foundation Ireland through the SFI Research Centres Programme.
 
