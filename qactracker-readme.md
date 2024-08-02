@@ -26,7 +26,8 @@ The QAC tracker tool has two important limitations.
 
 # How to Run
 Download the `qactracker.sh` script to the Apache Solr server.
-`# ./qactracker.sh
+```
+# ./qactracker.sh
 QACTRACKER: deleting qactracker string (i.e. clean up if it already exists)
 QACTRACKER: adding qactracker string to feature 1
 QACTRACKER: adding qactracker string to feature 2
@@ -40,7 +41,8 @@ QACTRACKER: finished adding qactracker string to features
 QACTRACKER: ReLoading TCD_Sugg at port 8983
 QACTRACKER: Here is a list of fields with the indexed qactracker string:
 qactracker1 qactracker2 qactracker3 qactracker4 qactracker5 qactracker6 qactracker7 qactracker8
-#`
+#
+``
 
 
 
