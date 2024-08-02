@@ -25,9 +25,23 @@ The QAC tracker tool has two important limitations.
 
 
 # How to Run
-To reproduce, simply download the code (python ipynb files) and LTR dataset (txt file).  The code was compliled using python 3 (see addional package requirements below).
-The scripts can be run independently, but the logical order is 
-1. search-demand-curve-enterprise-search.ipynb   (dataset analysis and prepration)
+Download the `qactracker.sh` script to the Apache Solr server.
+`# ./qactracker.sh
+QACTRACKER: deleting qactracker string (i.e. clean up if it already exists)
+QACTRACKER: adding qactracker string to feature 1
+QACTRACKER: adding qactracker string to feature 2
+QACTRACKER: adding qactracker string to feature 3
+QACTRACKER: adding qactracker string to feature 4
+QACTRACKER: adding qactracker string to feature 5
+QACTRACKER: adding qactracker string to feature 6
+QACTRACKER: adding qactracker string to feature 7
+QACTRACKER: adding qactracker string to feature 8
+QACTRACKER: finished adding qactracker string to features
+QACTRACKER: ReLoading TCD_Sugg at port 8983
+QACTRACKER: Here is a list of fields with the indexed qactracker string:
+qactracker1 qactracker2 qactracker3 qactracker4 qactracker5 qactracker6 qactracker7 qactracker8
+#
+`
 
 
 
