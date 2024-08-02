@@ -38,7 +38,7 @@ QACTRACKER: adding qactracker string to feature 6
 QACTRACKER: adding qactracker string to feature 7
 QACTRACKER: adding qactracker string to feature 8
 QACTRACKER: finished adding qactracker string to features
-QACTRACKER: ReLoading TCD_Sugg at port 8983
+QACTRACKER: ReLoading REDACTED at port 8983
 QACTRACKER: Here is a list of fields with the indexed qactracker string:
 qactracker1 qactracker2 qactracker3 qactracker4 qactracker5 qactracker6 qactracker7 qactracker8
 #
