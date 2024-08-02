@@ -42,15 +42,41 @@ QACTRACKER: ReLoading TCD_Sugg at port 8983
 QACTRACKER: Here is a list of fields with the indexed qactracker string:
 qactracker1 qactracker2 qactracker3 qactracker4 qactracker5 qactracker6 qactracker7 qactracker8
 #
-``
-
-
-
+```
 
 # Dependencies
+For the above to work, there should be a separate field for each QAC ranking feature.  The fields are designed in the Solr schema as follows: -
+ ```
+#grep suggestion /opt/solr/server/solr/REDACTED/conf/managed-schema
+  <field name="suggestion_term_1" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_2" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_3" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_4" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_5" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_6" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_7" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_8" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_term_all" type="text_general" indexed="true" stored="true"/>
+  <field name="suggestion_weight_1" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_2" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_3" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_4" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_5" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_6" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_7" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <field name="suggestion_weight_8" type="pdouble" docValues="false" indexed="true" stored="true"/>
+  <copyField source="suggestion_term_1" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_2" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_3" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_4" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_5" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_6" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_7" dest="suggestion_term_all"/>
+  <copyField source="suggestion_term_8" dest="suggestion_term_all"/>
+#
+```
 
 
-  
 
 
 # Acknowledgements
