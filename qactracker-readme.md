@@ -13,8 +13,8 @@ A useful verification and validation test to ensure that all of the various feat
 ## Ranking And Recall
 This tracker validation method performs a simple gauge of both the recall and ranking
 aspects of QAC for ES: -
-• Recall: the instance number appended to each string tells us the origin of the QAC candidate. If there are nine features, there should be nine candidates for the appropriate prefix.
-• Ranking: the order in which the candidates are ranked is a reflection of the weightings that are assigned via LTR. In Figure 4.8, we see that feature number 6 (identified by qactracker6) has a relatively higher LTR weighting than, say, feature number 3.
+* Recall: the instance number appended to each string tells us the origin of the QAC candidate. If there are nine features, there should be nine candidates for the appropriate prefix.
+* Ranking: the order in which the candidates are ranked is a reflection of the weightings that are assigned via LTR. In Figure 4.8, we see that feature number 6 (identified by qactracker6) has a relatively higher LTR weighting than, say, feature number 3.
 
 
 ### Limitations
