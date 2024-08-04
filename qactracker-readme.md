@@ -25,7 +25,7 @@ The QAC tracker tool has two important limitations.
 
 
 ## Suitability for Enterprise Search
-The speed and simplicity of this tracker method are appropriate for an Enterprise Search environment, where search may not be the core focus of the organisation and where it is unlikely that there is a dedicated Centre of Search Excellence (CSE) comprised of staff with specialist expertise in fields like LTR who are constantly monitoring the QAC subsystem. A bash script called qactracker.sh is used to populate the fields of the Solr index. While the script is custom-written for Apache Solr, it should be easily adaptable for any IR platform. The code for qactracker.sh and the accompanying ‘readme’ file are published on GitHub.
+The speed and simplicity of this tracker method are appropriate for an Enterprise Search environment, where search may not be the core focus of the organisation and where it is unlikely that there is a dedicated Centre of Search Excellence (CSE) comprised of staff with specialist expertise in fields like LTR who are constantly monitoring the QAC subsystem. A bash script called qactracker.sh is used to populate the fields of the Solr index. While the script is custom-written for Apache Solr, it should be easily adaptable for any IR platform. The code for qactracker.sh and the accompanying ‘readme’ file are published here on GitHub.
 
 ## Advanced verification
 To retrieve the absolute weighting for each feature, a more sophisticated validation and verification of the LTR implementation and operation is required.  The REST API command is used to query the Solr Index to retrieve LTR weighting (in blue font) for each feature.
