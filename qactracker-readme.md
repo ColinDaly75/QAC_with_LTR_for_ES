@@ -30,15 +30,15 @@ The speed and simplicity of this tracker method are appropriate for an Enterpris
 ## Advanced verification
 To retrieve the absolute weighting for each feature, a more sophisticated validation and verification of the LTR implementation and operation is required.  The REST API command is used to query the Solr Index to retrieve LTR weighting (in blue font) for each feature.
 ```
-$ c u r l h t tp : / / l o c a l h o s t :8983/ s o l r /$CORE/ s u g g e s t ?\
+$  curl http://localhost:8983/solr/$CORE/suggest?\
 > q=\${QAC STRING}\
-> &s u g g e s t . count=10\
-> &s u g g e s t=t r u e \
-> &s o r t=weigh t+a s c \
-> &s u g g e s t . d i c t i o n a r y=s u g g e s t e r a l l \
-> &wt=j s o n \
-> | g rep −e term −e weigh t
-” term ”: ” q a c t r a c k e r 6 ” ,
+> &suggest.count=10\
+> &suggest=true \
+> &sort=weight+asc \
+> &suggest.dictionary=suggesterall \
+> &wt=json \
+> | grep −e term −e weight
+” term ”: ”q a c t r a c k e r 6 ” ,
 ” weigh t ” : 300 ,
 ” term ”: ” q a c t r a c k e r 1 ” ,
 ” weigh t ” : 50 ,
