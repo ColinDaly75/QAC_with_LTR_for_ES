@@ -25,8 +25,38 @@ The QAC tracker tool has two important limitations.
 
 
 ## Suitability for Enterprise Search
+The speed and simplicity of this tracker method are appropriate for an Enterprise Search environment, where search may not be the core focus of the organisation and where it is unlikely that there is a dedicated Centre of Search Excellence (CSE) comprised of staff with specialist expertise in fields like LTR who are constantly monitoring the QAC subsystem. A bash script called qactracker.sh is used to populate the fields of the Solr index. While the script is custom-written for Apache Solr, it should be easily adaptable for any IR platform. The code for qactracker.sh and the accompanying ‘readme’ file are published on GitHub.
 
 ## Advanced verification
+Listing 4.3: REST API command to query the Solr Index to retrieve LTR weighting (in blue font) for each feature.
+```
+$ c u r l h t tp : / / l o c a l h o s t :8983/ s o l r /$CORE/ s u g g e s t ?\
+> q=\${QAC STRING}\
+> &s u g g e s t . count=10\
+> &s u g g e s t=t r u e \
+> &s o r t=weigh t+a s c \
+> &s u g g e s t . d i c t i o n a r y=s u g g e s t e r a l l \
+> &wt=j s o n \
+> | g rep −e term −e weigh t
+” term ”: ” q a c t r a c k e r 6 ” ,
+” weigh t ” : 300 ,
+” term ”: ” q a c t r a c k e r 1 ” ,
+” weigh t ” : 50 ,
+” term ”: ” q a c t r a c k e r 8 ” ,
+” weigh t ” : 30 ,
+” term ”: ” q a c t r a c k e r 2 ” ,
+” weigh t ” : 1 ,
+” term ”: ” q a c t r a c k e r 3 ” ,
+” weigh t ” : 1 ,
+” term ”: ” q a c t r a c k e r 5 ” ,
+” weigh t ” : 1 ,
+” term ”: ” q a c t r a c k e r 7 ” ,
+” weigh t ” : 1 ,
+” term ”: ” q a c t r a c k e r 4 ” ,
+” weigh t ” : 0 ,
+```
+
+
 
 ## How to Run
 Download the `qactracker.sh` script to the Apache Solr server.
