@@ -1,4 +1,4 @@
-# QACTRACKER: Validation and Verification for QAC in Enterprise Search
+# QACTRACKER: Validation for QAC in Enterprise Search
 -----------------------------------------------------------------------------------
 
 Contact: dalyc24@tcd.ie
