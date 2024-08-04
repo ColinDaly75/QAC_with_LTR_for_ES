@@ -5,7 +5,7 @@ Contact: dalyc24@tcd.ie
 
 -----------------------------------------------------------------------------------
 ## Intro
-A useful verification and validation test to ensure that all of the various features (i.e. fields in the Apache Solr index) are being utilised by QAC is to add a unique ‘tracking’ string that immediately conveys the source of the candidate. For example, “qactracker[1..n]”, where n is the number of features as shown in Figure below.
+A useful verification and validation test to ensure that all of the various features (i.e. fields in the Apache Solr index) are being utilised by Query Auto-Complete [QAC] is to add a unique ‘tracking’ string that immediately conveys the source of the candidate. For example, “qactracker[1..n]”, where n is the number of features as shown in Figure below.
 
  
 ![fig-qac-validation-qactracker-2](https://github.com/user-attachments/assets/69c872ee-1352-49a2-a015-35f1af305068)
