@@ -5,7 +5,7 @@ Contact: dalyc24@tcd.ie
 
 -----------------------------------------------------------------------------------
 ## Intro
-The code outlined in this repository pertains to the field of Query Auto-Completion (QAC) in the domain of Enterprise Search (ES).   This code accompanies my paper entitled "**Learning to Rank for Query Auto-Complete with Language Modelling for Enterprise Search.**"
+The code outlined in this repository pertains to the field of Query Auto-Completion (QAC) in the domain of Enterprise Search (ES).   This code accompanies my paper entitled "**Learning to Rank for Query Auto-Complete with Language Modelling for Enterprise Search**", which was voted the best overall paper at KDIR 2024.
 
 
 ## Analysis & Experiments
